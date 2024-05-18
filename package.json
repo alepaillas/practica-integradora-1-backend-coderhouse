@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/alepaillas/practica-integradora-1-backend-coderhouse#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
