@@ -1,11 +1,10 @@
 // Importamos el módulo express para crear nuestra aplicación web
 import express from "express";
-// Importamos nuestras rutas
-//import productsRouter from "./routes/products.mjs";
-//import cartsRouter from "./routes/carts.mjs";
 import { initializeMongoDb } from "./config/mongoDb.config.mjs";
 import { disconnectMongoDb } from "./config/mongoDb.config.mjs";
-import productsRouter from "./routes/product.routes.mjs";
+// Importamos nuestras rutas
+import productsRouter from "./routes/products.routes.mjs";
+import cartsRouter from "./routes/carts.routes.mjs";
 
 // Conexión con la base de datos
 initializeMongoDb();
@@ -30,7 +29,7 @@ app.use(express.json());
 
 // Usamos las rutas
 app.use("/api/products", productsRouter);
-//app.use("/api/carts", cartsRouter);
+app.use("/api/carts", cartsRouter);
 
 // Escuchamos las solicitudes en el puerto definido y mostramos un mensaje en la consola cuando el servidor esté listo
 app.listen(PORT, () => {
