@@ -2,7 +2,7 @@
 // Se utilizan archivos locales para el modelo de persistencia de datos.
 
 //  Importar funciones loadProducts y saveProducts
-import { loadCarts, saveCarts } from "../utils/fs.mjs";
+import { loadCarts, saveCarts } from "./utils/fs.mjs";
 
 // funcion de chatGPT para generar UUIDs que usaremos para identificar los productos mas adelante
 /*

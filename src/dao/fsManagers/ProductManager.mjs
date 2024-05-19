@@ -6,7 +6,7 @@
 
 //  nueva sintaxis import
 //  Importar funciones loadProducts y saveProducts
-import { loadProducts, saveProducts } from "../utils/fs.mjs";
+import { loadProducts, saveProducts } from "./utils/fs.mjs";
 
 // funcion de chatGPT para generar UUIDs que usaremos para identificar los productos mas adelante
 /*

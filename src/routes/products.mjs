@@ -4,7 +4,7 @@ import {
   Product,
   ProductManager,
   validateUUID,
-} from "../models/ProductManager.mjs";
+} from "../dao/fsManagers/ProductManager.mjs";
 
 const router = express.Router();
 
